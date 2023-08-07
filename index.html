@@ -54,11 +54,9 @@
             <p class="header__paragraph">Monday-Friday(10:00-19:00)</p>
             <p class="header__paragraph">Saturday-Sunday(11:00-18:00)</p>
           </div>
-          <div class="header__paragraph-address">
-            <p class="header__paragraph">
-              200 Success Avenue, The Town of Triple Peaks
-            </p>
-          </div>
+          <p class="header__paragraph-address">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
         </div>
       </header>
       <main class="content">
@@ -105,6 +103,7 @@
                   type="text"
                   class="form__input"
                   placeholder="Name Surename"
+                  required
                 />
               </label>
               <label class="form__label">
@@ -115,11 +114,12 @@
                   max="8"
                   class="form__input"
                   placeholder="1-8"
+                  required
                 />
               </label>
               <label class="form__label">
                 Date & time *
-                <input type="datetime-local" class="form__input" />
+                <input type="datetime-local" class="form__input" required />
               </label>
               <label class="form__label">
                 Your email *
@@ -127,11 +127,17 @@
                   type="email"
                   class="form__input"
                   placeholder="email@email.com"
+                  required
                 />
               </label>
               <button class="form__button">Book a table</button>
-              <label class="form__box">
-                <input type="checkbox" name="checkbox" class="form__checkbox" />
+              <label class="form__label_type_checkbox">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  class="form__checkbox"
+                  required
+                />
                 I agree with the terms of use
               </label>
             </fieldset>
@@ -257,20 +263,18 @@
       </main>
       <footer class="footer" id="contact">
         <div class="footer__columns">
-          <div>
-            <img
-              class="footer__logo"
-              src="/images/logo_coffeeshop_light.svg"
-              alt="Coffee shop Logo"
-            />
-          </div>
+          <img
+            class="footer__logo"
+            src="images/logo_coffeeshop_light.svg"
+            alt="Coffee shop Logo"
+          />
           <div class="footer__content">
             <h4 class="footer__social-heading">Social media</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a href="#" class="footer__social-link">
                   <img
-                    src="/images/facebook_white.svg"
+                    src="images/facebook_white.svg"
                     alt="Facebook Logo"
                     class="footer__social-icon"
                   />
@@ -280,7 +284,7 @@
               <li class="footer__list-item">
                 <a href="#" class="footer__social-link">
                   <img
-                    src="/images/instagram_white.svg"
+                    src="images/instagram_white.svg"
                     alt="Instagram Logo"
                     class="footer__social-icon"
                   />
